@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form class="form" action="">
+            <div class="form-header">
+                <h4>Cadastrar produto</h4>
+            </div>
+    
+            <div class="form-content">
+                <div class="form-input required">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" placeholder="Informe o nome" required>
+                </div>
+                <div class="form-input">
+                    <label for="descricao">Descrição</label>
+                    <input type="text" name="descricao" placeholder="Informe a descrição">
+                </div>
+                <div class="form-input required">
+                    <label for="preco">Preço</label>
+                    <input type="number" step="0.0" name="preco" placeholder="Informe o preço" required>
+                </div>
+            </div>
+    
+            <div class="form-action">
+                <button type="button" onclick="salvarRelatorio()">Enviar</button>
+                <button type="button" onclick="LimparForm()">Limpar</button>
+            </div>
+        <ul id="produto">
+            <li>
+
+            </li>
+        </ul>
+    </main>
+</body>
+
+</html>
